@@ -20,7 +20,7 @@
 	       }
     </style>
 
-    <title>@yield('title')</title>
+    <title>{{page_title($title ?? '')}} </title>
 </head>
 <body>
 	@include('partials._nav')

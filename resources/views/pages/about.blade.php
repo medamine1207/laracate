@@ -1,4 +1,5 @@
-@extends('default')
+@extends('default', ['title'=>'about'])
+
 @section('content')
 <div class="container">
 <h1>What is Laracarte?</h1>
@@ -9,7 +10,7 @@
 		</div>
 
 	</div>
-	<p>Feel free to help to improve the source code.</p>
+	<p>Feel free to help to improve the source <a href="https://github.com/medamine1207/laracate">code.</a></p>
 	<hr>
 	<h2>What is Laramap?</h2>
 	<p>Laramap is the website by which Laracarte was inspired :).</p>

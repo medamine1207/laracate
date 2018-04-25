@@ -1,8 +1,6 @@
-@extends('default')
+@extends('default',['title'=>'Home'])
 
-@section('title')
-amine
-@endsection
+
 
 @section('content')
 <h1 class="text-left">map here!!!!</h1>
