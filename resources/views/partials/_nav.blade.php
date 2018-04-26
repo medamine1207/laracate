@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <a class="navbar-brand mr-auto mr-lg-0" href="#">Laracarte</a>
+    <a class="navbar-brand mr-auto mr-lg-0" href="#">{{config('app.name')}}</a>
     <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
       <span class="navbar-toggler-icon"></span>
     </button>
