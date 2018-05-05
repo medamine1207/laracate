@@ -1,5 +1,7 @@
 <?php
 
+use App\Mail\ContactMessageCreated;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +17,11 @@ Route::get('/', [
 		'as'=>'root_path',
 		'uses'=>'PagesController@home'
 ]);
+
+Route::get('/test-email',function(){
+	return new ContactMessageCreated('med amine ismaili alaoui','medamine1207@gmail.com','Merci pour le projet Laracarte');
+});
+
 Route::get('/about', [
 		'as'=>'about_path',
 		'uses'=>'PagesController@about'
@@ -22,5 +29,10 @@ Route::get('/about', [
 
 Route::get('/contact', [
 		'as'=>'contact_path',
-		'uses'=>'ContactsController@contacts'
+		'uses'=>'ContactsController@create'
+]);
+
+Route::post('/contact', [
+		'as'=>'contact_path',
+		'uses'=>'ContactsController@store'
 ]);

@@ -23,6 +23,8 @@
     <title>{{page_title($title ?? '')}} </title>
 </head>
 <body>
+	<script src="//code.jquery.com/jquery.js"></script>
+@include('flashy::message')
 	@include('partials._nav')
 	@yield('content')
 
